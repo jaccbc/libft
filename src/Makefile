@@ -6,7 +6,7 @@
 #    By: joandre- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/16 01:36:57 by joandre-          #+#    #+#              #
-#    Updated: 2024/05/30 03:44:25 by joandre-         ###   ########.fr        #
+#    Updated: 2024/05/31 21:44:31 by joandre-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ bonus: $(NAME) $(BONUS_OBJ)
 	ar rcs $(NAME) $(BONUS_OBJ)
 
 clean:
-	rm -rf *.o
+	rm -rf $(OBJ) $(BONUS_OBJ)
 
 fclean: clean
 	rm -rf $(NAME)
